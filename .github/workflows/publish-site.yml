@@ -13,7 +13,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Build site
-      run: npx shadow-clj release app
+      run: npx shadow-cljs release app
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
