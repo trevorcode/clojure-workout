@@ -10,7 +10,7 @@
 (defonce cooldown-time (r/atom 20))
 (defonce timer-state (r/atom :stopped))
 (defonce page (r/atom {:page 1
-                       :text "temp"}))
+                       :text "No workout loaded"}))
 
 (def start-sound (js/Audio. "sounds/start.wav"))
 (def stop-sound (js/Audio. "sounds/stop.wav"))
