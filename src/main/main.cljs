@@ -5,9 +5,9 @@
             [cljs.core.async :refer [<!]]
             [cljs-http.client :as http]))
 
-(defonce current-time (r/atom 5))
-(defonce workout-time (r/atom 5))
-(defonce cooldown-time (r/atom 8))
+(defonce current-time (r/atom 30))
+(defonce workout-time (r/atom 30))
+(defonce cooldown-time (r/atom 20))
 (defonce timer-state (r/atom :stopped))
 (defonce page (r/atom {:page 1
                        :text "temp"}))
